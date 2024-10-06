@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node ./frontend/src/index.js",
+    "start": "node ./backend/index.js &&",
     "dev": "nodemon ./backend/index.js",
-    "build": "cd backend npm run dev"
+    "build": "cd frontend npm start"
   },
   "keywords": [],
   "author": "",
