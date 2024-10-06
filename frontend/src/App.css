@@ -1,0 +1,40 @@
+.filterCenter {
+  display: grid;
+  place-items: center
+}
+
+.componentDisplay {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #05070a;
+  color: white;
+}
+
+.autocomplete-input {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.autocomplete-input > label{
+  color: #1976D2; 
+}
+.autocomplete-label > label{
+  color: #1976D2; 
+}
+
+.autocomplete-input .MuiInputLabel-root.Mui-focused {
+  color: #1976D2;
+}
+
+.autocomplete-input .MuiOutlinedInput-root fieldset {
+  border-color: #1976D2; 
+  border-width: 2px; 
+}
+
+.autocomplete-input:hover .MuiOutlinedInput-root fieldset {
+  border-color: #1976D2;
+}
