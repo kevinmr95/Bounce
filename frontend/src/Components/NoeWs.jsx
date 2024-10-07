@@ -61,7 +61,7 @@ export default class NeoWs extends React.Component {
         try {
             const [start, end] = this.state.date;
 
-            await axios.get('${process.env.API_URL}/neoWs', {
+            await axios.get('${process.env.REACT_APP_API_URL}/neoWs', {
                 params: {
                     startDate: dayjs(start).format('YYYY-MM-DD'),
                     endDate: dayjs(end).format('YYYY-MM-DD'),

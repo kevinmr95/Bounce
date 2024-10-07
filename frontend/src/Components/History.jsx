@@ -47,7 +47,7 @@ export default class History extends React.Component {
 
     fetchData = async () => {
         try {
-            await axios.get('${process.env.API_URL}/history', {
+            await axios.get('${process.env.REACT_APP_API_URL}/history', {
                 params: {
                     text: this.state.text,
                     mediaType: (this.state.image ? 'image,' : '') +
