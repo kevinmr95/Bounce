@@ -56,7 +56,7 @@ export default class Epic extends React.Component {
             date = this.state.date != null ? date = dayjs(this.state.date).format('YYYY-MM-DD') : null;
             if (date != null) {
                 option = this.state.option;
-                const response = await axios.get('${process.env.REACT_APP_API_URL}/epic', {
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/epic`, {
                     params: {
                         date: date,
                         option: option,

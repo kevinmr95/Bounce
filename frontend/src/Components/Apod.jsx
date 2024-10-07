@@ -75,7 +75,7 @@ export default class Apod extends React.Component {
       count = this.state.count > 0 ? count = this.state.count : null;
 
       if (date != null || dateFrom != null || count != null) {
-        await axios.get('${process.env.REACT_APP_API_URL}/apod', {
+        await axios.get(`${process.env.REACT_APP_API_URL}/apod`, {
           params: {
             date: date,
             dateFrom: dateFrom,
