@@ -67,7 +67,7 @@ export default class Mars extends React.Component {
     fetchData = async () => {
         try {
             this.setState({ loading: true });
-            await axios.get('http://localhost:5000/mars', {
+            await axios.get('${process.env.API_URL}/mars', {
                 params: {
                     date: dayjs(this.state.date).format('YYYY-MM-DD'),
                     option: this.state.option,
